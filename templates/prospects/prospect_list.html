@@ -1,0 +1,5 @@
+<ul>
+{% for prospect in object_list %}
+   <li>{{ prospect.first_name }} {{ prospect.last_name }}, {{ prospect.prospect_email }}, {{ prospect.prospect_phone }}</li>
+{% endfor %}
+</ul>
