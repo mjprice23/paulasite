@@ -1,0 +1,42 @@
+<html>
+<head>
+    {% load bootstrap4 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery=1 %}
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'paulaapp/css/base.css' %}"/>
+    <title>Paulished</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+          <h1>Knolls Visitors</h1>
+        </div>
+
+
+
+        <ul>
+         <div class="row">
+        {% for prospect in object_list %}
+
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                {{ prospect.first_name }} {{ prospect.last_name }}
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+        {#   <li><a href="{{  prospect.id }}">{{ prospect.first_name }} {{ prospect.last_name }}, {{ prospect.prospect_email }}, {{ prospect.prospect_phone }}</li>#}
+        {% endfor %}
+         </div>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

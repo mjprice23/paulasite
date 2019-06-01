@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'paulaapp',
     'phonenumber_field',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
