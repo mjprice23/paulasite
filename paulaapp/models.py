@@ -5,6 +5,12 @@ from django_extensions.db.models import TimeStampedModel
 from django.core.validators import MaxValueValidator, MinValueValidator
 import logging
 import datetime
+from uuid_upload_path import upload_to
+from django.utils.translation import ugettext_lazy as _
+
+
+
+
 
 from phonenumber_field.modelfields import PhoneNumberField
 
@@ -54,9 +60,10 @@ class Prospect(TimeStampedUUIDModel):
     prospect_phone = models.CharField(max_length=12, default=None)  # opportunity to reformat this later
     date_added = models.DateField(("Date"), auto_now_add=True)
     first_visit = models.DateField()
-    day_of_week = models.CharField(max_length=3, choices=DAY_CHOICES)
+    first_visit_day_of_week = models.CharField(max_length=3, choices=DAY_CHOICES)
     referral_source = models.CharField(max_length=50)
     multiple_visits: bool = models.BooleanField(default=False)
+    date_most_recent_visit = models.DateField(null=True)
     #owns_property: bool = models.BooleanField(default=False)
     rent_or_own = models.CharField(max_length=1, choices=LIVING_CHOICES)
     #if owns_property:
@@ -66,12 +73,13 @@ class Prospect(TimeStampedUUIDModel):
             #property_location = models.CharField(max_length=200)
     buy_new_construction_only: bool = models.BooleanField(default=False)
     claims_agent: bool = models.BooleanField(default=False)
-    notes = models.TextField(max_length=1000)
+    notes = models.TextField(max_length=1000, blank=True)
     priority = models.CharField(max_length=2, choices=PRIORITY_CHOICES)
+    prospect_card = models.FileField(upload_to=upload_to, blank=True, null=True)
 
     class Meta:     #lets you define superficial things (.latest) used outside the database
-        ordering = ['last_name', 'first_name', 'prospect_email', 'prospect_phone']
-
+        #ordering = ['last_name', 'first_name', 'prospect_email', 'prospect_phone']
+        ordering = ['-date_most_recent_visit']
 
     def __str__(self):  #   when you print, what shows up
         return '{} {}'.format(self.first_name, self.last_name)

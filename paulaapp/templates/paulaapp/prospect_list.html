@@ -21,13 +21,26 @@
         {% for prospect in object_list %}
 
                 <div class="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                {{ prospect.first_name }} {{ prospect.last_name }}
-                            </h5>
+
+                        <div class="card">
+                            <div style="height: 160px">
+{#                                <div class="card text-center">#}
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            {{ prospect.first_name }} {{ prospect.last_name }}
+                                        </h5>
+                                        <p class="card-text">
+                                            Most recent visit:<br>
+                                            {{ prospect.date_most_recent_visit }}
+                                        </p>
+                                    </div>
+{#                                </div>#}
+                            </div>
+                            <div class="btn-toolbar w-25">
+                                <button type="button" class="btn btn-outline-danger btn-sm">Edit</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm btn-float-right">Flip</button>
+                            </div>
                         </div>
-                    </div>
                 </div>
 
         {#   <li><a href="{{  prospect.id }}">{{ prospect.first_name }} {{ prospect.last_name }}, {{ prospect.prospect_email }}, {{ prospect.prospect_phone }}</li>#}
