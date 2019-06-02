@@ -76,6 +76,7 @@ class Prospect(TimeStampedUUIDModel):
     notes = models.TextField(max_length=1000, blank=True)
     priority = models.CharField(max_length=2, choices=PRIORITY_CHOICES)
     prospect_card = models.FileField(upload_to=upload_to, blank=True, null=True)
+    priority_color = models.CharField(null=True, blank=True, max_length=10)
 
     class Meta:     #lets you define superficial things (.latest) used outside the database
         #ordering = ['last_name', 'first_name', 'prospect_email', 'prospect_phone']

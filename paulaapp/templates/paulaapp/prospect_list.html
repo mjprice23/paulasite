@@ -5,6 +5,7 @@
     {% bootstrap_javascript jquery=1 %}
     {% load staticfiles %}
     <link rel="stylesheet" type="text/css" href="{% static 'paulaapp/css/base.css' %}"/>
+    <script src="{% static 'paulaapp/js/fitty.min.js' %}" ></script>
     <title>Paulished</title>
 </head>
 
@@ -22,23 +23,19 @@
 
                 <div class="col-4">
 
-                        <div class="card">
-                            <div style="height: 160px">
-{#                                <div class="card text-center">#}
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            {{ prospect.first_name }} {{ prospect.last_name }}
-                                        </h5>
-                                        <p class="card-text">
-                                            Most recent visit:<br>
-                                            {{ prospect.date_most_recent_visit }}
-                                        </p>
-                                    </div>
-{#                                </div>#}
-                            </div>
-                            <div class="btn-toolbar w-25">
-                                <button type="button" class="btn btn-outline-danger btn-sm">Edit</button>
-                                <button type="button" class="btn btn-outline-primary btn-sm btn-float-right">Flip</button>
+                        <div class="card border-{{ prospect.priority }}">
+                            <div class="plate">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        {{ prospect.first_name }} {{ prospect.last_name }}
+                                    </h5>
+                                    <p class="card-text">
+                                        Most recent visit:<br>
+                                        {{ prospect.date_most_recent_visit }}
+                                    </p>
+                                    <a href="{% url 'prospect-detail' pk=prospect.id %}" class="btn btn-outline-danger btm-sm float-left" role="button">Edit</a>
+                                    <a href="" class="btn btn-outline-primary btm-sm float-right">Flip</a>
+                                </div>
                             </div>
                         </div>
                 </div>
@@ -50,6 +47,13 @@
 
     </div>
 
+<script>
+    fitty('h5.card-title', {
+        minSize: 24,
+        multiLine: true,
+
+    });
+</script>
 </body>
 
 </html>

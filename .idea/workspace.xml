@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f46ddd0a-3c0b-4dde-b68f-72fa61514ff0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/paulaapp/static/paulaapp/js/fitty.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paulaapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/paulaapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paulaapp/static/paulaapp/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/paulaapp/static/paulaapp/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paulaapp/templates/paulaapp/prospect_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/paulaapp/templates/paulaapp/prospect_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paulaapp/templates/paulaapp/prospect_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/paulaapp/templates/paulaapp/prospect_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paulasite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/paulasite/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/paulaapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="81" column="22" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+            <state relative-caret-position="-254">
+              <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -57,25 +56,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paulaapp/migrations/0015_prospect_date_most_recent_visit.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paulaapp/migrations/0014_auto_20190601_2006.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paulaapp/migrations/0012_auto_20190601_1945.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paulaapp/migrations/0013_auto_20190601_2003.py">
+        <entry file="file://$PROJECT_DIR$/paulaapp/templates/paulaapp/prospect_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="260">
+              <caret line="37" column="38" selection-start-line="27" selection-start-column="32" selection-end-line="37" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paulaapp/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paulaapp/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paulasite/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+              <folding>
+                <element signature="e#633#665#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,37 +103,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/paulasite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1890">
+            <state relative-caret-position="402">
               <caret line="126" selection-start-line="126" selection-end-line="126" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/paulaapp/templates/paulaapp/prospect_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/paulaapp/static/paulaapp/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+            <state relative-caret-position="229">
+              <caret line="111" column="31" selection-start-line="111" selection-start-column="31" selection-end-line="111" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paulaapp/templates/paulaapp/prospect_confirm_delete.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/paulaapp/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -147,9 +154,10 @@
         <option value="$PROJECT_DIR$/paulaapp/templates/paulaapp/prospect_form.html" />
         <option value="$PROJECT_DIR$/paulasite/settings.py" />
         <option value="$PROJECT_DIR$/paulaapp/migrations/0013_auto_20190601_2003.py" />
+        <option value="$PROJECT_DIR$/paulaapp/static/paulaapp/js/fitty.min.js" />
         <option value="$PROJECT_DIR$/paulaapp/models.py" />
-        <option value="$PROJECT_DIR$/paulaapp/static/paulaapp/css/base.css" />
         <option value="$PROJECT_DIR$/paulaapp/templates/paulaapp/prospect_list.html" />
+        <option value="$PROJECT_DIR$/paulaapp/static/paulaapp/css/base.css" />
       </list>
     </option>
   </component>
@@ -203,14 +211,6 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="paulaapp" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="paulasite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="paulasite" type="462c0819:PsiDirectoryNode" />
-              <item name="paulaapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="paulaapp" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="paulasite" type="b2602c69:ProjectViewProjectNode" />
@@ -312,12 +312,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558560363130</updated>
-      <workItem from="1558560371732" duration="42816000" />
+      <workItem from="1558560371732" duration="50843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42816000" />
+    <option name="totallyTimeSpent" value="50843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="763" extended-state="0" />
@@ -497,16 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paulasite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding>
-            <element signature="e#633#665#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/waterbackground.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -516,35 +506,8 @@
     <entry file="file://$PROJECT_DIR$/paulaapp/static/paulaapp/images/tilebackground.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/paulaapp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paulaapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/paulaapp/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paulasite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/paulaapp/migrations/0015_prospect_date_most_recent_visit.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -562,20 +525,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paulaapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="81" column="22" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/paulaapp/templates/paulaapp/prospect_confirm_delete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paulaapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -586,17 +549,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paulaapp/static/paulaapp/css/base.css">
+    <entry file="file://$PROJECT_DIR$/paulasite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+        <state relative-caret-position="327">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="e#633#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paulasite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paulaapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paulaapp/static/paulaapp/js/fitty.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3543" selection-start-line="4" selection-start-column="3543" selection-end-line="4" selection-end-column="3543" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paulaapp/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paulaapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-254">
+          <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/paulaapp/templates/paulaapp/prospect_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        <state relative-caret-position="260">
+          <caret line="37" column="38" selection-start-line="27" selection-start-column="32" selection-end-line="37" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paulaapp/static/paulaapp/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="111" column="31" selection-start-line="111" selection-start-column="31" selection-end-line="111" selection-end-column="31" />
         </state>
       </provider>
     </entry>
