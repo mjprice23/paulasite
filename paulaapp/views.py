@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic.list import ListView
 from .models import Prospect
-from django.views.generic.list import ListView
+from django.views.generic.list import ListView, View
 from django.views.generic.edit import UpdateView, CreateView, DeleteView
 from django.urls import reverse_lazy
 from .models import Prospect
@@ -30,5 +30,10 @@ class ProspectDeleteView(DeleteView):
     fields = '__all__'
     template_name = 'paulaapp/prospect_confirm_delete.html'
     success_url = reverse_lazy('prospect-list')
+
+
+class HomePageView(View):
+    template_name = 'paulaapp/home_page.html'
+    success_url = reverse_lazy('home')
 
 # Create your views here.
