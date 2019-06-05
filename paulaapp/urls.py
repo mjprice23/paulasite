@@ -8,7 +8,3 @@ urlpatterns = [
     path('<uuid:pk>/', ProspectDetailView.as_view(), name='prospect-detail'),
     #path('<uuid>/delete/'), ProspectDeleteView.as_view(), name='prospect-delete'),
 ]
-
-homepatterns = [
-    path('home/', HomePageView.as_view(), name='home'),
-]

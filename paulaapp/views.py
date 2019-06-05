@@ -1,10 +1,10 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView
 from django.views.generic.list import ListView
-from .models import Prospect
-from django.views.generic.list import ListView, View
 from django.views.generic.edit import UpdateView, CreateView, DeleteView
 from django.urls import reverse_lazy
 from .models import Prospect
+from django.http import HttpResponse
 
 
 class ProspectListView(ListView):
@@ -32,8 +32,14 @@ class ProspectDeleteView(DeleteView):
     success_url = reverse_lazy('prospect-list')
 
 
-class HomePageView(View):
+class HomePageView(TemplateView):
     template_name = 'paulaapp/home_page.html'
-    success_url = reverse_lazy('home')
+
+
+
+
+
+
+
 
 # Create your views here.

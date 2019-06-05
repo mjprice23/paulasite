@@ -66,6 +66,17 @@ h6 {
     margin-top: 25px;
 }
 
+h7 {
+    font: 400 75px/1.5 'Pacifico', Helvetica, sans-serif;
+    color: #2b2b2b;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: -10px;
+    display: block;
+
+}
+
 #add_button {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
@@ -78,15 +89,27 @@ h6 {
 }
 
 
-#to_do{
+#to_do {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     margin-bottom: 20px;
 }
 
+#to_do_home {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 8px;
+}
 
-.button {
 
+#prospect_btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 8px;
 }
 
 .col-4 {
