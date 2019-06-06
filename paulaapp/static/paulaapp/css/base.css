@@ -117,30 +117,26 @@ h7 {
 }
 
 .border-HI {
-    /*border: green;*/
     border-style: solid;
     border-width: 5px;
     border-color: rgba(255, 0, 0, 0.5);
 }
 
 .border-LO {
-    /*border: gray;*/
     border-style: solid;
     border-width: 5px;
     border-color: rgba(0, 0, 0, 0.5);
 }
 
 .border-MI {
-    /*border: yellow;*/
     border-style: solid;
     border-width: 5px;
-    border-color: rgba(255, 165, 0, 0.5);
+    border-color: rgba(255, 165, 0, 0.3);
 }
 
 .border-PU {
-    /*border: black;*/
     border-style: solid;
     border-width: 5px;
-    border-color: rgba(0, 0, 0, .5)
+    border-color: rgba(0, 0, 0, 0.5)
 }
 

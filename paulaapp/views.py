@@ -14,7 +14,8 @@ class ProspectListView(ListView):
 class ProspectDetailView(UpdateView):
     model = Prospect
     fields = '__all__'
-    template_name = 'paulaapp/prospect_form.html'
+    # template_name = 'paulaapp/prospect_form.html'
+    template_name = 'paulaapp/prospect_edit.html'
     success_url = reverse_lazy('prospect-list')
 
 

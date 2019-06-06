@@ -6,5 +6,5 @@ urlpatterns = [
     path('', ProspectListView.as_view(), name='prospect-list'),
     path('add/', ProspectAddView.as_view(), name='prospect-add'),
     path('<uuid:pk>/', ProspectDetailView.as_view(), name='prospect-detail'),
-    #path('<uuid>/delete/'), ProspectDeleteView.as_view(), name='prospect-delete'),
+    path('<uuid:pk>/delete/', ProspectDeleteView.as_view(), name='prospect-delete'),
 ]

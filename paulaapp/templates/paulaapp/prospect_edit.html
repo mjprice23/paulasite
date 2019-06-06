@@ -6,7 +6,7 @@
     {% load staticfiles %}
     <link rel="stylesheet" type="text/css" href="{% static 'paulaapp/css/base.css' %}"/>
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <title>Add Prospect</title>
+    <title>Edit Prospect</title>
 </head>
 
 
@@ -14,7 +14,7 @@
 {# Display a form #}
     <div class="container">
             <div class="header">
-              <h6>ADD PROSPECT</h6>
+              <h6>EDIT PROSPECT</h6>
                 <form action="" method="post" class="form" enctype="multipart/form-data">
                   {% csrf_token %}
                   {% bootstrap_form form %}
@@ -22,6 +22,7 @@
                     <button type="submit" class="btn btn-primary">
                       Submit
                     </button>
+                      <a href="{% url 'prospect-delete' pk=prospect.id %}" class="btn btn-danger" role="button">Delete Prospect</a>
                   {% endbuttons %}
                  </form>
             </div>
