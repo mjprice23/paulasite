@@ -4,7 +4,7 @@ from django.views.generic.list import ListView
 from django.views.generic.edit import UpdateView, CreateView, DeleteView
 from django.urls import reverse_lazy
 from .models import Prospect
-from django.http import HttpResponse
+from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
 
 
 class ProspectListView(ListView):
@@ -37,7 +37,9 @@ class HomePageView(TemplateView):
     template_name = 'paulaapp/home_page.html'
 
 
-
+class ToDoListView(ListView):
+    model = Prospect
+    template_name = 'paulaapp/to_do_list.html'
 
 
 
