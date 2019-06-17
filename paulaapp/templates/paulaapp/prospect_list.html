@@ -14,10 +14,20 @@
 <body>
     <div class="container">
         <div class="header">
-          <h1>Paulished</h1>
+          <h1><a class="paulished-link" href="{% url 'home' %}">Paulished</a></h1>
             <h2>KNOLLS VISITORS</h2>
-            <a id = "add_button" href="add/" class="btn btn-outline-dark btn-lg">ADD PROSPECT</a>
-            <a id = "to_do" href="to-do/" class="btn btn-outline-dark btn-lg">TO-DO</a>
+            <div class="container">
+                <form method="GET" action="" id="search form">
+                    <div class="row">
+                        <a id = "add_button" href="add/" class="btn btn-outline-dark col-auto nav-button">ADD PROSPECT</a>
+                        <div class="input-group col justify-content-center">
+                            <input class="form-control col-4" id="search box" name="q" type="text" value="{{ request.GET.q }}" placeholder="Search"/>
+                            <button class="search_submit btn btn-outline-dark" type="submit">Search</button>
+                        </div>
+                        <a id = "to_do" href="to-do/" class="btn btn-outline-dark col-auto ml-auto nav-button">TO-DO</a>
+                    </div>
+                </form>
+            </div>
         </div>
 
 

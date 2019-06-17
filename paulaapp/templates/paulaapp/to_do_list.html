@@ -14,8 +14,11 @@
 <body>
     <div class="container">
         <div class="header">
-          <h1>Paulished</h1>
+          <h1><a class="paulished-link" href="{% url 'home' %}">Paulished</a></h1>
             <h2>ACTION ITEMS</h2>
+        </div>
+        <div class="center-button">
+            <a id = "prospect_btn" href="{% url 'prospect-list' %}" class="btn btn-outline-dark btn-sm">PROSPECTS</a>
         </div>
             <table style="width:100%">
                 <tr>
@@ -26,7 +29,7 @@
                 {% for prospect in object_list %}
                     {% if prospect.action_item %}
                         <tr>
-                            <td>{{ prospect.first_name }} {{ prospect.last_name }}</td>
+                            <td><a href="{% url 'prospect-detail' pk=prospect.id %}">{{ prospect.first_name }} {{ prospect.last_name }}</a></td>
                             <td>{{ prospect.action_item }}</td>
                             <td>{{ prospect.action_date }}</td>
                         </tr>

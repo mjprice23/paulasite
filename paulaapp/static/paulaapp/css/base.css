@@ -18,7 +18,7 @@ h2 {
     font: 400 100px/1.5 'Oswald', sans-serif;
     text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 h8 {
@@ -84,10 +84,9 @@ h7 {
 
 #add_button {
     font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    margin-left: 110px;
-    margin-right: 570px;
-    margin-bottom: 20px;
+    /*margin-left: 110px;*/
+    /*margin-right: 570px;*/
+    /*margin-bottom: 20px;*/
     /*font: 400 50px/1.5 'Pacifico', Helvetica, sans-serif;*!*/
     /*color: #2b2b2b;*/
     /*text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);*/
@@ -96,16 +95,14 @@ h7 {
 
 #to_do {
     font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    margin-bottom: 20px;
 }
 
 #to_do_home {
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
     margin-bottom: 20px;
-    margin-top: 20px;
     margin-left: 8px;
+    margin-top: 5px;
 }
 
 
@@ -113,8 +110,8 @@ h7 {
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
     margin-bottom: 20px;
-    margin-top: 20px;
     margin-left: 8px;
+    margin-top: 5px;
 }
 
 .col-4 {
@@ -149,9 +146,39 @@ th {
     font-family: 'Oswald', sans-serif;
     font-size: 35px;
     margin-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 td {
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: 22px;
+}
+
+table {
+    border-spacing: 5px;
+}
+
+a.paulished-link {
+    color: #2b2b2b;
+}
+
+a.paulished-link:hover {
+    text-decoration: none;
+}
+
+div.center-button {
+    text-align: center;
+}
+
+ul {
+    padding: 0px;
+}
+
+a.nav-button {
+    width: 140px;
+}
+
+button.search_submit {
+    margin-left: 5px;
 }
