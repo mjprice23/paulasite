@@ -6,6 +6,16 @@
     {% load staticfiles %}
     <link rel="stylesheet" type="text/css" href="{% static 'paulaapp/css/base.css' %}"/>
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <script src="{% static 'paulaapp/js/bootstrap-datepicker.js' %}"></script>
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('.date').datepicker({
+               format: 'mm/dd/yyyy',
+               autoclose: true,
+                assumeNearbyYear: true,
+            });
+        })
+    </script>
     <title>Add Prospect</title>
 </head>
 

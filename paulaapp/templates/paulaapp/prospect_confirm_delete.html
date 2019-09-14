@@ -1,4 +1,35 @@
-<form method="post">{% csrf_token %}
-    <p>Are you sure you want to delete "{{ object }}"?</p>
-    <input type="submit" value="Confirm">
-</form>
+<html>
+<head>
+    {% load bootstrap4 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery=1 %}
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'paulaapp/css/base.css' %}"/>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Delete Prospect</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1><a class="paulished-link" href="{% url 'home' %}">Paulished</a></h1>
+        </div>
+        <div class="confirm-delete"><br><br>
+            <div class="card border-HI">
+                <div class="plate">
+                    <div class="card-body">
+                        <form method="post">{% csrf_token %}
+                        <br><p>Are you sure you want to delete <b>{{ object }}</b> as a Prospect?<br><br>
+                        <input type="submit" value="Confirm"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

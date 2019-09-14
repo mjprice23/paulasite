@@ -21,6 +21,42 @@ h2 {
     margin-bottom: 0px;
 }
 
+
+h9 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 6vw;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.prosright {
+    text-align: right;
+}
+
+.prosleft {
+    text-align: left;
+}
+
+h10 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+}
+
+h11 {
+    font-family: 'Arial';
+    font-size: 20px;
+}
+
+h12 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+}
+
+h13 {
+    font-family: 'Arial';
+    font-size: 20px;
+}
+
 h8 {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
@@ -139,7 +175,7 @@ h7 {
 .border-PU {
     border-style: solid;
     border-width: 5px;
-    border-color: rgba(0, 0, 0, 0.5)
+    border-color: rgba(46, 204, 113, 0.5)
 }
 
 th {
@@ -182,3 +218,31 @@ a.nav-button {
 button.search_submit {
     margin-left: 5px;
 }
+
+.confirm-delete {
+    text-align: center;
+    width: 100%;
+}
+
+
+.card-body {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    height: auto;
+    background: none;
+}
+
+.prospect-details {
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 5px;
+}
+
+.proscenter {
+    text-align: center;
+}
+

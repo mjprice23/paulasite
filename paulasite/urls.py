@@ -24,6 +24,6 @@ from paulaapp.views import HomePageView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', HomePageView.as_view(), name='home'),
+    path('', HomePageView.as_view(), name='home'),
     path('prospects/', include('paulaapp.urls')),
 ]

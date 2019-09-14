@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load bootstrap4 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery=1 %}
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'paulaapp/css/base.css' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>{{ prospect }}</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <h1><a class="paulished-link" href="{% url 'home' %}">Paulished</a></h1><br><br>
+        </div>
+
+
+        <div class="prospect-details">
+            <div class="prospect-details border-{{ object.priority }}">
+                    <div class="plate-detail">
+                        <div class="card-body single">
+                            <div class="proscenter"><h9 class="prosdetails">{{ object.first_name }} {{ object.last_name }}</h9></div><br>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <h10>Prospect email:  </h10><h11>{{ object.prospect_email }}</h11>
+                                </div>
+                                <div class="ml-auto">
+                                    <h12>Prospect phone:  </h12><h13>{{ object.prospect_phone }}</h13>
+                                </div>
+                            </div><br><br>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <h10>Referral source:  </h10><h11>{{ object.referral_source }}</h11>
+                                </div>
+                                <div class="ml-auto">
+                                    <h12>Rent or own:  </h12><h13> {{ object.get_rent_or_own_display }}</h13>
+                                </div>
+                            </div><br><br>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <h12>Buy new construction only:  </h12>
+                                        <h13>Yes</h13>
+                                </div>
+                                <div class="ml-auto">
+                                    <h12>Claims agent:  </h12><h13> {{ object.claims_agent }}</h13>
+                                </div>
+                            </div><br><br>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <h12>Notes:  </h12><h13>{{ object.notes }}</h13>
+                                </div>
+                                <div class="ml-auto">
+                                    <h12>Priority:  </h12><h13> {{ object.get_priority_display }}</h13>
+                                </div>
+                            </div><br><br>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <h12>Action item:  </h12><h13> {{ object.action_item }}</h13>
+                                </div>
+                                <div class="ml-auto">
+                                    <h12>Action date:  </h12><h13> {{ object.action_date }}</h13>
+                                </div>
+                            </div><br><br>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <h12>First visit day of week:  </h12><h13>{{ object.get_first_visit_day_of_week_display }}</h13>
+                                </div>
+                                <div class="ml-auto">
+                                    <h12>Visits:  </h12>
+                                    <h13>
+                                        <table>
+                                        {% for visit in object.visits.all %}
+                                            <div>
+                                                <tr>
+                                                    <td width="100%">{{ visit.visit_date }}</td>
+                                                    <td width="100%">{{ visit.visit_notes }}</td>
+                                                </tr>
+                                            </div>
+                                        {% endfor %}
+                                        </table>
+                                    </h13>
+                                </div>
+                            </div><br><br>
+
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -46,10 +46,10 @@
                                     </h5>
                                     <p class="card-text">
                                         Most recent visit:<br>
-                                        {{ prospect.date_most_recent_visit }}
+                                        {{ prospect.visits.latest.visit_date|date:'m/d/Y' }}
                                     </p>
-                                    <a href="{% url 'prospect-detail' pk=prospect.id %}" class="btn btn-outline-danger btm-sm float-left" role="button">Edit</a>
-                                    <a href="" class="btn btn-outline-primary btm-sm float-right">Flip</a>
+                                    <a href="{% url 'prospect-edit' pk=prospect.id %}" class="btn btn-outline-danger btm-sm float-left" role="button">Edit</a>
+                                    <a href="{% url 'prospect-details' pk=prospect.id %}" class="btn btn-outline-primary btm-sm float-right">Flip</a>
                                 </div>
                             </div>
                         </div>

@@ -29,7 +29,7 @@
                 {% for prospect in object_list %}
                     {% if prospect.action_item %}
                         <tr>
-                            <td><a href="{% url 'prospect-detail' pk=prospect.id %}">{{ prospect.first_name }} {{ prospect.last_name }}</a></td>
+                            <td><a href="{% url 'prospect-details' pk=prospect.id %}">{{ prospect.first_name }} {{ prospect.last_name }}</a></td>
                             <td>{{ prospect.action_item }}</td>
                             <td>{{ prospect.action_date }}</td>
                         </tr>

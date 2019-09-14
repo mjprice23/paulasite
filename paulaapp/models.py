@@ -8,12 +8,6 @@ import datetime
 from uuid_upload_path import upload_to
 from django.utils.translation import ugettext_lazy as _
 
-
-
-
-
-from phonenumber_field.modelfields import PhoneNumberField
-
 log = logging.getLogger(__name__)
 
 
@@ -59,7 +53,6 @@ class Prospect(TimeStampedUUIDModel):
     prospect_email = models.EmailField(max_length=100)
     prospect_phone = models.CharField(max_length=12, default=None)  # opportunity to reformat this later
     date_added = models.DateField(("Date"), auto_now_add=True)
-    first_visit = models.DateField()
     first_visit_day_of_week = models.CharField(max_length=3, choices=DAY_CHOICES)
     referral_source = models.CharField(max_length=50)
     multiple_visits: bool = models.BooleanField(default=False)
@@ -71,9 +64,10 @@ class Prospect(TimeStampedUUIDModel):
     priority = models.CharField(max_length=2, choices=PRIORITY_CHOICES)
     prospect_card = models.FileField(upload_to=upload_to, blank=True, null=True)
     action_item = models.CharField(blank=True, null=True, max_length=100)
-    action_date = models.DateField(null=True)
+    action_date = models.DateField(blank=True, null=True)
 
-    #priority_color = models.CharField(null=True, blank=True, max_length=10)
+    def get_fields(self):
+        return [(field.name, field.value_to_string(self)) for field in Prospect._meta.fields]
 
     class Meta:     #lets you define superficial things (.latest) used outside the database
         ordering = ['-date_most_recent_visit']
@@ -82,4 +76,14 @@ class Prospect(TimeStampedUUIDModel):
         return '{} {}'.format(self.first_name, self.last_name)
 
 
+class Visit(TimeStampedUUIDModel):
+    visit_date = models.DateField()
+    visit_notes = models.CharField(max_length=100)
+    prospect = models.ForeignKey(Prospect, on_delete=models.CASCADE, related_name='visits')
 
+    class Meta:
+        ordering = ['-visit_date']
+        get_latest_by = ['visit_date']
+
+    def __str__(self):
+        return '{}'.format(self.visit_date)
